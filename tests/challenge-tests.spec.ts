@@ -11,7 +11,7 @@ test.describe("Challenge tests", () => {
     await homePage.open();
   });
 
-  test("Nav bar - User should see all bookmarks", async ({ page }) => {
+  test("Nav bar - User should see all bookmarks", async ({}) => {
     const expectedBookmarks = ["Banking", "Insurance", "Finance & ESG", "Services", "Partners", "Company", "Resources"];
     for (const bookmark of expectedBookmarks) {
       await expect(homePage.header.getBookmarkByName(bookmark)).toBeVisible();

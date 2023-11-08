@@ -1,4 +1,4 @@
-import { Locator, Page } from "@playwright/test";
+import { Page } from "@playwright/test";
 import { BasePage } from "./basePage";
 import { Header } from "../framgents/header.fragment";
 
